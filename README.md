@@ -6,7 +6,7 @@ A simple **C# console application** that writes user-input text to a **binary fi
 
 * Prompts the user for text input
 * Validates non-empty input before writing
-* Saves text as binary using **Latin1 encoding**
+* Saves text as binary using **ASCII encoding**
 * Reads data back dynamically until EOF (no fixed buffer size)
 * Displays file contents as **8-bit binary strings**
 * Converts the binary back into **human-readable text**
@@ -20,13 +20,13 @@ A simple **C# console application** that writes user-input text to a **binary fi
 3. The **WriteFile method**:
 
    * Creates/overwrites `binaryFile.bin` in the working directory.
-   * Encodes the text into bytes using **Latin1**.
+   * Encodes the text into bytes using **ASCII**.
    * Writes the bytes to the file.
 4. The **ReadFile method**:
 
    * Opens the file and reads until EOF in chunks.
    * Prints each byte as an **8-bit binary string** (with spaces).
-   * Decodes the bytes back into text using **Latin1**.
+   * Decodes the bytes back into text using **ASCII**.
    * Displays both the binary and text output.
 
 ## Getting Started
